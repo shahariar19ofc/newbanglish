@@ -366,6 +366,7 @@ const connectDB = async () => {
       const isSslNeeded = connectionString.includes('vercel-storage.com') ||
                           connectionString.includes('neon.tech') ||
                           connectionString.includes('supabase.co') ||
+                          connectionString.includes('db.prisma.io') ||
                           connectionString.includes('sslmode=require');
 
       pool = new Pool({
